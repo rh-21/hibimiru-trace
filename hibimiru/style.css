@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* ----- base ----- */
+#achievements {
+  position: relative;
+  
+}
+
+.ac-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin:auto;
+}
+
+.ac-contents {
+  margin: 100px auto;
+}
+
+.ac-textbox {
+  text-align: center;
+  width: 70%;
+  padding: 10px 100px;
+}
+
+.ac-textbox::after {
+  position: absolute;
+  background-color: #111121;
+  top: 0;
+  right: 0;
+  width: 85%;
+  height: 400px;
+  content: '';
+  z-index: -100;
+  margin: 50px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin: 0 auto; 
+  max-width: 600px;
+
+  background-color: #fff;
+  color: #111114;
+  font-family: "Alata", serif;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.ac-title {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sp_br {
+  display: none;
+}
+
+.ac-text {
+  text-align: left;
+  color: #fff;
+  font-size:16px;
+}
+
+/* スライダー */
+
+.slider {
+  margin: auto;
+  width: 277px;
+  height: 488px;
+}
+
+.slick-nav-wrap {
+  display: flex;
+  width: 300px;
+}

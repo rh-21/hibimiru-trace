@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset=" UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- 検索にヒットしないようにするための記述です -->
+    <meta name="robots" content="noindex" />
+    <title>ショート動画制作サービス ビビミル</title>
+    <meta name="description" content="サイトの概要を記入します。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <!-- スライダー -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- header -->
+        <header class="header">
+
+        </header>
+
+        <!-- fv -->
+        <main>
+            <div class="fv-wrapper">
+            </div>
+
+
+            <!-- section01 -->
+            <section id="achievements">
+                <div class="ac-wrap">
+                    <div class="ac-contents ">
+                        <h3 class="section-title">ACHIEVEMENTS</h3>
+                        <div class="ac-textbox">
+                            <p class="ac-title">ショート動画制作サービス<br class="sp_br">『ヒビミル』の実績</p>
+                            <p class="ac-text">魅力的なショート動画を制作し、お客様の大切なアカウントのリーチ数、フォロワー獲得・クリック数を伸ばします。</p>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div>
+                            <img class="sl-img" src="https://placehold.jp/3d4070/ffffff/277x488.png" alt="" />
+                            <p class="sl-title">アパレル企業</p>
+                        </div>
+                        <div>
+                            <img class="sl-img" src="https://placehold.jp/1822aa/ffffff/277x488.png" alt="" />
+                            <p class="sl-title">ホテル</p>
+                        </div>
+                        <div>
+                            <img class="sl-img" src="https://placehold.jp/277x488.png" alt="" />
+                            <p class="sl-title">アパレル企業2</p>
+                        </div>
+                    </div>
+                    <div class="slick-nav-wrap">
+                        <ul class="slick-dots"></ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer">
+            <p class="copylight"></p>
+        </footer>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.slick-nav-wrap').empty();
+            $('.slider').slick({
+                dots: true,
+                arrows: true,
+                appendArrows: $('.slick-nav-wrap'), // 矢印をナビゲーション内に移動
+                appendDots: $('.slick-nav-wrap'),  // ドットもナビゲーション内に移動
+                prevArrow: '<button class="slick-prev"><img src="./img/prev.png" alt="Prev"></button>',
+                nextArrow: '<button class="slick-next"><img src="./img/next.png" alt="Next"></button>',
+            });
+        });
+    </script>
+
+</body>
+
+</html>
