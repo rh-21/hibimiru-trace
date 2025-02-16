@@ -1,8 +1,48 @@
 @charset "UTF-8";
-/* ----- base ----- */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+}
+
+
+/* ----- section-title ----- */
+
+.section-title {
+  text-align: center;
+  margin: 0 auto; 
+  max-width: 600px;
+
+  background-color: #111114;
+  color: #fff;
+  font-family: "Alata", serif;
+  font-weight: 400;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.section-title-br {
+  background-color: #fff;
+  color: #111114;
+}
+
+.section-title-jp {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.merit-title-set {
+  margin-bottom: 40px;
+}
+
+
+/* ----- achivement----- */
+
 #achievements {
   position: relative;
-  
 }
 
 .ac-wrap {
@@ -14,7 +54,7 @@
 }
 
 .ac-contents {
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 .ac-textbox {
@@ -33,18 +73,10 @@
   content: '';
   z-index: -100;
   margin: 50px 0;
-}
+}  
 
-.section-title {
+.merit-title-set {
   text-align: center;
-  margin: 0 auto; 
-  max-width: 600px;
-
-  background-color: #fff;
-  color: #111114;
-  font-family: "Alata", serif;
-  font-weight: 400;
-  font-size: 60px;
 }
 
 .ac-title {
@@ -75,4 +107,53 @@
 .slick-nav-wrap {
   display: flex;
   width: 300px;
+}
+
+/* merit */
+#merit {
+  padding: 100px 0;
+  background-image: url(./img/merit-bg.png);
+}
+
+.merit-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.merit-item img{
+  width: 53%;
+}
+.merit-item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+/* MERIT itemテキスト部分 */
+
+.merit-item-textbox {
+  width: 50%;
+}
+
+.merit-item-title {
+  display: flex;
+  padding: 0 30px;
+  border-bottom: 1px solid #cfcfcf ;
+  align-items: center;
+}
+
+.merit-num {
+  max-width: 78px;
+  flex-shrink: 0; 
+  height: fit-content;
+  margin-right: 20px;
+}
+
+.merit-item-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.merit-item-text{
+  padding: 0 30px;
 }
