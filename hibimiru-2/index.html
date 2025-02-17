@@ -42,7 +42,10 @@
                         <p class="ac-text">魅力的なショート動画を制作し、お客様の大切なアカウントのリーチ数、フォロワー獲得・クリック数を伸ばします。</p>
                         <div class="slider-carsol">
 
-                            <ul class="slick-dots"></ul>
+                            <ul class="slick-dots">
+                                <button type="button" class="slick-prev">Previous</button>
+                                <button type="button" class="slick-next">Next</button>
+                            </ul>
                         </div>
                     </div>
                     <div class="slider">
@@ -82,8 +85,9 @@
                 dots: true,
                 infinite: true,
                 adaptiveHeight: true,
+                prevArrow: '<img src="./img/prev.png" alt="" class="prev_icon">',
+                nextArrow: '<img src="./img/next.png" alt="" class="next_icon">',
                 
-            
           });
         });
     </script>
