@@ -36,16 +36,16 @@
             <!-- achievement -->
             <section id="achievement">
                 <div class="inner">
-                    <div class="ac-textbox">
-                        <h3 class="section-title">セクションタイトル</h3>
-                        <h4 class="ac-title">ショート動画制作サービス<br class="sp_br">『ヒビミル』の実績</h4>
-                        <p class="ac-text">魅力的なショート動画を制作し、お客様の大切なアカウントのリーチ数、フォロワー獲得・クリック数を伸ばします。</p>
-                        <div class="slider-carsol">
-
-                            <ul class="slick-dots">
-                                <button type="button" class="slick-prev">Previous</button>
-                                <button type="button" class="slick-next">Next</button>
-                            </ul>
+                    <div class="ac-right">
+                        <h3 class="section-title section-title-br">ACHIEVEMENTS</h3>
+                        <div class="ac-textbox">
+                            <h4 class="ac-title">ショート動画制作サービス<br class="sp_br">『ヒビミル』の実績</h4>
+                            <p class="ac-text">魅力的なショート動画を制作し、お客様の大切なアカウントのリーチ数、フォロワー獲得・クリック数を伸ばします。</p>
+                            <div class="slider-carsol">
+                                <div class="slider-prev prev_icon"></div> <!-- 左矢印 -->
+                                <ul class="slider-dots slick-dots"></ul> <!-- ドット -->
+                                <div class="slider-next next_icon"></div> <!-- 右矢印 -->
+                            </div>
                         </div>
                     </div>
                     <div class="slider">
@@ -63,6 +63,53 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- section02 -->
+            <section id="merit">
+                <div class="merit-wrap container">
+                    <div class="merit-title-set">
+                        <h3 class="section-title">MERIT</h3>
+                        <span class="section-title-jp">メリット</span>
+                    </div>
+                    <ul class="merit-list">
+                        <li class="merit-item">
+                            <img class="merit-item-mainimg" src="./img/merit-img-01.png" alt="男性がスマートフォンを見る画像">
+                            <div class="merit-item-textbox">
+                                <div class="merit-item-title">
+                                    <img class="merit-num" src="./img/merit.png" alt="Merit">
+                                    <p>01</p>
+                                    <h4 class="merit-title-text">自社商品やサービス認知拡大</h4>
+                                </div>
+                                <p class="merit-item-text">
+                                    ショート動画は気軽に視聴できるため、再生回数が多ければSNS上での拡散が容易なため多くのターゲットへの認知拡大が見込め自社商品やサービスの認知拡大が見込めます。</p>
+                            </div>
+                        </li>
+                        <li class="merit-item">
+                            <img class="merit-item-mainimg" src="./img/merit-img-02.png" alt="男性がスマートフォンを見る画像">
+                            <div class="merit-item-textbox">
+                                <div class="merit-item-title">
+                                    <img class="merit-num" src="./img/merit.png" alt="Merit">
+                                    <p>02</p>
+                                    <h4 class="merit-title-text">自社商品やサービス認知拡大</h4>
+                                </div>
+                                <p class="merit-item-text">
+                                    ショート動画は気軽に視聴できるため、再生回数が多ければSNS上での拡散が容易なため多くのターゲットへの認知拡大が見込め自社商品やサービスの認知拡大が見込めます。</p>
+                            </div>
+                        </li>
+                        <li class="merit-item">
+                            <img class="merit-item-mainimg" src="./img/merit-img-03.png" alt="男性がスマートフォンを見る画像">
+                            <div class="merit-item-textbox">
+                                <div class="merit-item-title">
+                                    <img class="merit-num" src="./img/merit.png" alt="Merit">
+                                    <p>03</p>
+                                    <h4 class="merit-title-text">自社商品やサービス認知拡大</h4>
+                                </div>
+                                <p class="merit-item-text">
+                                    ショート動画は気軽に視聴できるため、再生回数が多ければSNS上での拡散が容易なため多くのターゲットへの認知拡大が見込め自社商品やサービスの認知拡大が見込めます。</p>
+                            </div>
+                        </li>
+                    </ul>
             </section>
         </main>
 
@@ -85,12 +132,17 @@
                 dots: true,
                 infinite: true,
                 adaptiveHeight: true,
+                // prevArrow: '<button class="prev_icon"><img src="./img/prev.png" alt="前へ"></button>',
+                // nextArrow: '<button class="next_icon"><img src="./img/next.png" alt="次へ"></button>',
                 prevArrow: '<img src="./img/prev.png" alt="" class="prev_icon">',
                 nextArrow: '<img src="./img/next.png" alt="" class="next_icon">',
-                
+                appendDots: $('.slick-dots'),  // ドットを移動させる
+                appendArrows: $('.slider-carsol'), // 両方の矢印をまとめて移動するコンテナ
           });
         });
     </script>
 </body>
 
 </html>
+
+
